@@ -1,0 +1,43 @@
+# Dependency directories
+node_modules/
+/Backend/vendor/
+/Backend/node_modules/
+/Frontend/node_modules/
+/.git-portable/
+
+# Environment files (containing secrets)
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+.env.backup
+.env.production
+/Backend/.env
+/Backend/.env.*
+/Frontend/.env
+/Frontend/.env.*
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# OS/Editor files
+.DS_Store
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Build outputs
+/Frontend/dist/
+/Frontend/dist-ssr/
+/Backend/public/build/
+/Backend/public/hot/
+/Backend/public/storage
