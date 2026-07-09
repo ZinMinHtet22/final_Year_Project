@@ -4,36 +4,36 @@ Vellum is a modern, comprehensive web application designed to simplify kitchen m
 
 ---
 
-## 🚀 Features
+## Features
 
-### 1. 🍳 Recipe Discovery & Community
+### 1. Recipe Discovery & Community
 - Browse, search, and filter a vast collection of recipes.
 - Filter by categories, dietary tags (Vegan, Gluten-Free, Keto, etc.), and difficulty levels.
 - Submit custom recipes to the community (requires admin approval before publishing).
 - Write and view user reviews and ratings.
 - Save favorite recipes to a personalized favorites list.
 
-### 2. 🤖 AI ChefBot (Culinary Assistant)
+### 2. AI ChefBot (Culinary Assistant)
 - Integrated AI widget powered by the **Google Gemini API**.
 - Ask for recipe recommendations based on ingredients you have, cooking tips, or step-by-step guidance.
 - Access the ChefBot page for continuous cooking chat assistance.
 
-### 3. 🍱 Smart Pantry
+### 3. Smart Pantry
 - Keep track of the ingredients you currently have in stock.
 - Add and remove ingredients with ease.
 - Get suggestions for recipes you can cook right now with your pantry stock.
 
-### 4. 🛒 Shopping List & Budget Planner
+### 4. Shopping List & Budget Planner
 - Add ingredients directly from recipes to your shopping list.
 - Check off items as you shop.
 - Estimate costs and manage budgets.
 - Support for **multi-currency conversion** with automatic exchange rate calculations.
 
-### 5. 📊 Analytics Engine
+### 5. Analytics Engine
 - Keep track of cooked recipes over time.
 - View stats and charts on your eating habits, recipe diversity, and cost savings.
 
-### 6. 🛡️ Admin Command Center
+### 6. Admin Command Center
 - **User Management**: Modify user roles (toggle Admin privileges) and delete accounts.
 - **Recipe Moderation**: Review, edit, approve, or reject pending community recipe submissions.
 - **Ingredient & Currency Database**: CRUD operations for available ingredients and exchange rates.
@@ -42,7 +42,7 @@ Vellum is a modern, comprehensive web application designed to simplify kitchen m
 
 ---
 
-## 🛠️ Technology Stack
+## Technology Stack
 
 - **Frontend**: React (v19), Vite, Tailwind CSS (v4), Axios, Chart.js, Lucide Icons, React Router (v7)
 - **Backend**: PHP (v8.x), Laravel (v11), Laravel Sanctum (Token Auth)
@@ -51,7 +51,7 @@ Vellum is a modern, comprehensive web application designed to simplify kitchen m
 
 ---
 
-## 📁 Directory Structure
+## Directory Structure
 
 ```
 Final Year Project/
@@ -61,7 +61,7 @@ Final Year Project/
 
 ---
 
-## ⚙️ Installation & Setup
+## Installation & Setup
 
 ### Prerequisites
 - **PHP** (v8.2 or higher)
@@ -141,7 +141,7 @@ Final Year Project/
 
 ---
 
-## 🧪 Running Tests
+## Running Tests
 
 To run the backend test suite:
 ```bash
@@ -151,5 +151,5 @@ php artisan test
 
 ---
 
-## 📄 License
+## License
 Vellum is open-sourced software.
