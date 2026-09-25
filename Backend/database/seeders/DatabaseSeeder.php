@@ -16,6 +16,11 @@ class DatabaseSeeder extends Seeder
      */
     public function run(): void
     {
+        // Skip if already seeded (safe to run on every boot)
+        if (\App\Models\Recipe::count() > 0) {
+            return;
+        }
+
         // Seed Admin User
         User::firstOrCreate(
             ['email' => 'admin@studenteats.com'],
