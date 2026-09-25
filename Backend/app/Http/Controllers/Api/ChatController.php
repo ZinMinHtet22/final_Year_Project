@@ -146,7 +146,7 @@ class ChatController extends Controller
             }
 
             // Call Gemini API from server
-            $response = Http::withoutVerifying()->post("https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key={$apiKey}", $payload);
+            $response = Http::withoutVerifying()->post("https://generativelanguage.googleapis.com/v1beta/models/gemini-3.8-flash:generateContent?key={$apiKey}", $payload);
 
             if ($response->failed()) {
                 $errorMsg = $response->json()['error']['message'] ?? 'Gemini API request failed';
