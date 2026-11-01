@@ -1,6 +1,6 @@
 # Vellum — Smart Recipe & Culinary Assistant
 
-> Full kitchen-management platform with ChefBot assistant, smart pantry, meal planning, multi-currency budgets, and analytics. Bachelor's capstone project.
+> Full kitchen-management platform with ChefBot AI assistant (Google Gemini API), smart pantry, meal planning, multi-currency budgets, and analytics. Bachelor's capstone project.
 
 [![Live Demo](https://img.shields.io/badge/Live%20Demo-Vercel-000000?style=for-the-badge&logo=vercel)](https://vellum-frontend-three.vercel.app)
 [![Laravel 11](https://img.shields.io/badge/Laravel-11-FF2D20?style=for-the-badge&logo=laravel)](https://laravel.com/)
@@ -20,7 +20,7 @@
 
 ## 🚀 Features
 
-- 🤖 **ChefBot Assistant** — conversational cooking help and recipe suggestions
+- 🤖 **ChefBot AI Assistant** — conversational cooking help powered by Google Gemini API
 - 🥗 **Smart Pantry** — track ingredients and get recipe suggestions
 - 📅 **Meal Planning** — plan weekly menus with nutritional info
 - 💰 **Multi-Currency Budgets** — manage food expenses across currencies
@@ -39,7 +39,7 @@
 | Frontend | React 18 + Vite |
 | Backend | Laravel 11 (PHP) |
 | Database | MySQL |
-| Authentication | Laravel Sanctum |
+| AI | Google Gemini || Authentication | Laravel Sanctum |
 | Styling | Tailwind CSS |
 | State Management | React Context / Hooks |
 
@@ -121,7 +121,7 @@ Create a `.env` file in `Backend/` based on `.env.example`. Key variables:
 | `DB_DATABASE` | MySQL database name |
 | `DB_USERNAME` | MySQL username |
 | `DB_PASSWORD` | MySQL password |
-| `GEMINI_API_KEY` | Google Gemini API key |
+| `GEMINI_API_KEY` | Google Gemini API key for ChefBot |
 
 > ⚠️ Never commit your actual `.env` file. It is gitignored.
 
