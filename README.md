@@ -2,17 +2,11 @@
 
 > Full kitchen-management platform with ChefBot AI assistant (Google Gemini API), smart pantry, meal planning, multi-currency budgets, and analytics. Bachelor's capstone project.
 
-[![Live Demo](https://img.shields.io/badge/Live%20Demo-Vercel-000000?style=for-the-badge&logo=vercel)](https://vellum-frontend-three.vercel.app)
-[![Laravel 11](https://img.shields.io/badge/Laravel-11-FF2D20?style=for-the-badge&logo=laravel)](https://laravel.com/)
-[![React](https://img.shields.io/badge/React-18-61DAFB?style=for-the-badge&logo=react)](https://react.dev/)
-[![Vite](https://img.shields.io/badge/Vite-5.x-646CFF?style=for-the-badge&logo=vite)](https://vitejs.dev/)
-[![MySQL](https://img.shields.io/badge/MySQL-8.x-00758F?style=for-the-badge&logo=mysql)](https://www.mysql.com/)
 
 ---
 
 ## 📸 Screenshot
 
-![Vellum Screenshot](screenshot.png)
 
 > Replace `screenshot.png` with an actual screenshot of your app running locally or on the live demo.
 
