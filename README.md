@@ -2,31 +2,29 @@
 
 > Full kitchen-management platform with ChefBot AI assistant (Google Gemini API), smart pantry, meal planning, multi-currency budgets, and analytics. Bachelor's capstone project.
 
-
 ---
 
-## 📸 Screenshot
-
+##  Screenshot
 
 > Replace `screenshot.png` with an actual screenshot of your app running locally or on the live demo.
 
 ---
 
-## 🚀 Features
+##  Features
 
-- 🤖 **ChefBot AI Assistant** — conversational cooking help powered by Google Gemini API
-- 🥗 **Smart Pantry** — track ingredients and get recipe suggestions
-- 📅 **Meal Planning** — plan weekly menus with nutritional info
-- 💰 **Multi-Currency Budgets** — manage food expenses across currencies
-- 📊 **Analytics** — visualize spending and nutrition trends
-- 🔐 **Sanctum Token Auth** — secure authentication with API tokens
-- 👥 **Role-Based Admin Moderation** — admin and user role management
-- ⚡ **React + Vite Frontend** — fast, modern UI
-- 🐘 **Laravel 11 REST API** — robust backend with MySQL
+-  **ChefBot AI Assistant** — conversational cooking help powered by Google Gemini API
+-  **Smart Pantry** — track ingredients and get recipe suggestions
+-  **Meal Planning** — plan weekly menus with nutritional info
+-  **Multi-Currency Budgets** — manage food expenses across currencies
+-  **Analytics** — visualize spending and nutrition trends
+-  **Sanctum Token Auth** — secure authentication with API tokens
+-  **Role-Based Admin Moderation** — admin and user role management
+-  **React + Vite Frontend** — fast, modern UI
+-  **Laravel 11 REST API** — robust backend with MySQL
 
 ---
 
-## 🛠️ Tech Stack
+##  Tech Stack
 
 | Layer | Technology |
 |-------|------------|
@@ -39,7 +37,7 @@
 
 ---
 
-## 📦 Installation
+##  Installation
 
 ### Prerequisites
 
@@ -99,13 +97,13 @@ npm run build
 
 ---
 
-## 🌐 Live Demo
+##  Live Demo
 
-🔗 [https://vellum-frontend-three.vercel.app](https://vellum-frontend-three.vercel.app)
+ [https://vellum-frontend-three.vercel.app](https://vellum-frontend-three.vercel.app)
 
 ---
 
-## 🔐 Environment Variables
+##  Environment Variables
 
 Create a `.env` file in `Backend/` based on `.env.example`. Key variables:
 
@@ -117,11 +115,11 @@ Create a `.env` file in `Backend/` based on `.env.example`. Key variables:
 | `DB_PASSWORD` | MySQL password |
 | `GEMINI_API_KEY` | Google Gemini API key for ChefBot |
 
-> ⚠️ Never commit your actual `.env` file. It is gitignored.
+>  Never commit your actual `.env` file. It is gitignored.
 
 ---
 
-## 📁 Project Structure
+##  Project Structure
 
 ```
 final_Year_Project/
@@ -147,7 +145,7 @@ final_Year_Project/
 
 ---
 
-## 🤝 Contributing
+##  Contributing
 
 Contributions are welcome! Please open an issue or submit a pull request.
 
@@ -159,13 +157,13 @@ Contributions are welcome! Please open an issue or submit a pull request.
 
 ---
 
-## 📄 License
+##  License
 
 This project is licensed under the MIT License.
 
 ---
 
-## 👨‍💻 Author
+## ‍ Author
 
 **Jeffery Zin Min Htet**  
 Full-Stack Developer | IT Engineer | Content Developer  
@@ -176,4 +174,4 @@ Yangon, Myanmar
 
 ---
 
-> ⭐ Star this repo if you find it useful!
+>  Star this repo if you find it useful!
