@@ -1,155 +1,187 @@
-# Vellum - Smart Recipe, Kitchen Management, and AI Culinary Assistant
+# Vellum — Smart Recipe & AI Culinary Assistant
 
-Vellum is a modern, comprehensive web application designed to simplify kitchen management, recipe discovery, meal planning, and shopping. Powered by a React frontend and a Laravel backend, Vellum integrates an AI Culinary Assistant (ChefBot) powered by the Google Gemini API, a Smart Pantry, shopping list budget planners, and detailed usage analytics.
+> Full kitchen-management platform with ChefBot AI assistant (Google Gemini API), smart pantry, meal planning, multi-currency budgets, and analytics. Bachelor's capstone project.
 
----
-
-## Features
-
-### 1. Recipe Discovery & Community
-- Browse, search, and filter a vast collection of recipes.
-- Filter by categories, dietary tags (Vegan, Gluten-Free, Keto, etc.), and difficulty levels.
-- Submit custom recipes to the community (requires admin approval before publishing).
-- Write and view user reviews and ratings.
-- Save favorite recipes to a personalized favorites list.
-
-### 2. AI ChefBot (Culinary Assistant)
-- Integrated AI widget powered by the **Google Gemini API**.
-- Ask for recipe recommendations based on ingredients you have, cooking tips, or step-by-step guidance.
-- Access the ChefBot page for continuous cooking chat assistance.
-
-### 3. Smart Pantry
-- Keep track of the ingredients you currently have in stock.
-- Add and remove ingredients with ease.
-- Get suggestions for recipes you can cook right now with your pantry stock.
-
-### 4. Shopping List & Budget Planner
-- Add ingredients directly from recipes to your shopping list.
-- Check off items as you shop.
-- Estimate costs and manage budgets.
-- Support for **multi-currency conversion** with automatic exchange rate calculations.
-
-### 5. Analytics Engine
-- Keep track of cooked recipes over time.
-- View stats and charts on your eating habits, recipe diversity, and cost savings.
-
-### 6. Admin Command Center
-- **User Management**: Modify user roles (toggle Admin privileges) and delete accounts.
-- **Recipe Moderation**: Review, edit, approve, or reject pending community recipe submissions.
-- **Ingredient & Currency Database**: CRUD operations for available ingredients and exchange rates.
-- **Feedback Portal**: Review user feedback and suggestions.
-- **System Controls**: View live server performance stats and toggle maintenance mode.
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-Vercel-000000?style=for-the-badge&logo=vercel)](https://vellum-frontend-three.vercel.app)
+[![Laravel 11](https://img.shields.io/badge/Laravel-11-FF2D20?style=for-the-badge&logo=laravel)](https://laravel.com/)
+[![React](https://img.shields.io/badge/React-18-61DAFB?style=for-the-badge&logo=react)](https://react.dev/)
+[![Vite](https://img.shields.io/badge/Vite-5.x-646CFF?style=for-the-badge&logo=vite)](https://vitejs.dev/)
+[![MySQL](https://img.shields.io/badge/MySQL-8.x-00758F?style=for-the-badge&logo=mysql)](https://www.mysql.com/)
+[![Google Gemini](https://img.shields.io/badge/Gemini%20API-AI-4285F4?style=for-the-badge&logo=google)](https://ai.google.dev/)
 
 ---
 
-## Technology Stack
+## 📸 Screenshot
 
-- **Frontend**: React (v19), Vite, Tailwind CSS (v4), Axios, Chart.js, Lucide Icons, React Router (v7)
-- **Backend**: PHP (v8.x), Laravel (v11), Laravel Sanctum (Token Auth)
-- **Database**: MySQL
-- **AI Integration**: Google Gemini API
+![Vellum Screenshot](screenshot.png)
 
----
-
-## Directory Structure
-
-```
-Final Year Project/
-├── Backend/          # Laravel REST API project
-└── Frontend/         # React + Vite application
-```
+> Replace `screenshot.png` with an actual screenshot of your app running locally or on the live demo.
 
 ---
 
-## Installation & Setup
+## 🚀 Features
+
+- 🤖 **ChefBot AI Assistant** — conversational cooking help powered by Google Gemini API
+- 🥗 **Smart Pantry** — track ingredients and get recipe suggestions
+- 📅 **Meal Planning** — plan weekly menus with nutritional info
+- 💰 **Multi-Currency Budgets** — manage food expenses across currencies
+- 📊 **Analytics** — visualize spending and nutrition trends
+- 🔐 **Sanctum Token Auth** — secure authentication with API tokens
+- 👥 **Role-Based Admin Moderation** — admin and user role management
+- ⚡ **React + Vite Frontend** — fast, modern UI
+- 🐘 **Laravel 11 REST API** — robust backend with MySQL
+
+---
+
+## 🛠️ Tech Stack
+
+| Layer | Technology |
+|-------|------------|
+| Frontend | React 18 + Vite |
+| Backend | Laravel 11 (PHP) |
+| Database | MySQL |
+| Authentication | Laravel Sanctum |
+| AI | Google Gemini API |
+| Styling | Tailwind CSS |
+| State Management | React Context / Hooks |
+
+---
+
+## 📦 Installation
 
 ### Prerequisites
-- **PHP** (v8.2 or higher)
-- **Composer**
-- **Node.js** (v18 or higher) & **npm**
-- **MySQL**
 
----
+- PHP 8.2+
+- Composer
+- Node.js 18+ & npm
+- MySQL 8.0+
 
-### 1. Backend Setup
+### Backend Setup
 
-1. Navigate to the backend directory:
-   ```bash
-   cd Backend
-   ```
-
-2. Install dependencies:
-   ```bash
-   composer install
-   ```
-
-3. Configure your Environment:
-   Copy `.env.example` to `.env` and configure your database settings and Gemini API key:
-   ```env
-   DB_CONNECTION=mysql
-   DB_HOST=127.0.0.1
-   DB_PORT=3306
-   DB_DATABASE=laravel
-   DB_USERNAME=root
-   DB_PASSWORD=your_mysql_password
-
-   GEMINI_API_KEY=your_gemini_api_key
-   ```
-
-4. Generate Application Key:
-   ```bash
-   php artisan key:generate
-   ```
-
-5. Run Migrations & Seeders:
-   ```bash
-   php artisan migrate --seed
-   ```
-
-6. Start the Laravel Dev Server:
-   ```bash
-   php artisan serve
-   ```
-   The backend will be running at `http://127.0.0.1:8000`.
-
----
-
-### 2. Frontend Setup
-
-1. Navigate to the frontend directory:
-   ```bash
-   cd ../Frontend
-   ```
-
-2. Install dependencies:
-   ```bash
-   npm install
-   ```
-
-3. Configure Environment Variables:
-   Create a `.env` file in the frontend root and set the Google Client ID if using Google Authentication:
-   ```env
-   VITE_GOOGLE_CLIENT_ID=your_google_client_id
-   ```
-   *Note: The frontend connects to the backend at `http://127.0.0.1:8000/api` by default (defined in `src/api/client.js`).*
-
-4. Start the Vite Dev Server:
-   ```bash
-   npm run dev
-   ```
-   The frontend will be running at `http://localhost:5173`.
-
----
-
-## Running Tests
-
-To run the backend test suite:
 ```bash
-cd Backend
-php artisan test
+# Clone the repository
+git clone https://github.com/ZinMinHtet22/final_Year_Project.git
+cd final_Year_Project/Backend
+
+# Install PHP dependencies
+composer install
+
+# Copy environment file
+cp .env.example .env
+
+# Generate application key
+php artisan key:generate
+
+# Configure your database in .env
+# DB_DATABASE=vellum
+# DB_USERNAME=root
+# DB_PASSWORD=
+
+# Run migrations
+php artisan migrate
+
+# (Optional) Seed database
+php artisan db:seed
+
+# Start Laravel development server
+php artisan serve
+```
+
+### Frontend Setup
+
+```bash
+# Navigate to frontend directory
+cd ../Frontend
+
+# Install dependencies
+npm install
+# or: pnpm install
+
+# Start development server
+npm run dev
+# or: pnpm dev
+
+# Build for production
+npm run build
 ```
 
 ---
 
-## License
-Vellum is open-sourced software.
+## 🌐 Live Demo
+
+🔗 [https://vellum-frontend-three.vercel.app](https://vellum-frontend-three.vercel.app)
+
+---
+
+## 🔐 Environment Variables
+
+Create a `.env` file in `Backend/` based on `.env.example`. Key variables:
+
+| Variable | Description |
+|----------|-------------|
+| `APP_KEY` | Laravel application key (auto-generated) |
+| `DB_DATABASE` | MySQL database name |
+| `DB_USERNAME` | MySQL username |
+| `DB_PASSWORD` | MySQL password |
+| `GEMINI_API_KEY` | Google Gemini API key for ChefBot |
+
+> ⚠️ Never commit your actual `.env` file. It is gitignored.
+
+---
+
+## 📁 Project Structure
+
+```
+final_Year_Project/
+├── Backend/
+│   ├── app/
+│   ├── config/
+│   ├── database/
+│   │   ├── migrations/
+│   │   └── seeders/
+│   ├── routes/
+│   ├── .env.example
+│   ├── composer.json
+│   └── artisan
+├── Frontend/
+│   ├── src/
+│   ├── public/
+│   ├── package.json
+│   ├── vite.config.ts
+│   └── tailwind.config.js
+├── README.md
+└── LICENSE
+```
+
+---
+
+## 🤝 Contributing
+
+Contributions are welcome! Please open an issue or submit a pull request.
+
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add some amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
+
+---
+
+## 📄 License
+
+This project is licensed under the MIT License.
+
+---
+
+## 👨‍💻 Author
+
+**Jeffery Zin Min Htet**  
+Full-Stack Developer | IT Engineer | Content Developer  
+Yangon, Myanmar  
+- GitHub: [@ZinMinHtet22](https://github.com/ZinMinHtet22)
+- LinkedIn: [zin-min-htet-a167b42b5](https://linkedin.com/in/zin-min-htet-a167b42b5)
+- Email: jefferyyas8@gmail.com
+
+---
+
+> ⭐ Star this repo if you find it useful!
