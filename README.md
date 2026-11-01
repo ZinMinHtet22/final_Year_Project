@@ -1,4 +1,4 @@
-# Vellum — Smart Recipe & Culinary Assistant
+# Vellum — Smart Recipe & AI Culinary Assistant
 
 > Full kitchen-management platform with ChefBot AI assistant (Google Gemini API), smart pantry, meal planning, multi-currency budgets, and analytics. Bachelor's capstone project.
 
